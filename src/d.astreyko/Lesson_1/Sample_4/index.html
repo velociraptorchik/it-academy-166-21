@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_1</title>
+</head>
+<style>
+    body {
+        padding: 50px;
+    }
+    button {
+        display: block;
+        margin: 10px auto;
+        width: 280px;
+        height: 40px;
+        color: white;
+        border: solid 1px black;
+        font-size: 20px;
+    }
+    button:nth-of-type(1) {
+        background: #19c4d4;
+    }
+    button:nth-of-type(2) {
+        background: forestgreen;
+    }
+    button:nth-of-type(3) {
+        background: #dc2525;
+    }
+    button:nth-of-type(4) {
+        background: darkgrey;
+    }
+    button:nth-of-type(5) {
+        background: black;
+    }
+    button:hover {
+        cursor: pointer;
+    }
+    div {
+        position: absolute;
+        top: 50px;
+        left: 80px;
+        font-size: 20px;
+        line-height: 180%;
+    }
+    li {
+        margin: 5px;
+    }
+</style>
+<body>
+    <div>
+        <ol>
+            <li id='default'>Привет, я оригинальный пункт списка</li>
+        </ol>
+    </div>
+    <button id="buttonOne">Вставить в самое начало</button>
+    <button id="buttonTwo">Вставить перед оригиналом</button>
+    <button id="buttonThree">Вставить после оригинала</button>
+    <button id="buttonFour">Вставить в самый конец</button>
+    <button id="reset">Reset</button>
+    <script>
+        const mainTag = document.getElementById('default');
+        document.getElementById('buttonOne').onclick = function() {
+            const li = document.createElement('li');
+            li.classList.add('new');
+            li.innerHTML = 'Меня вставили в самое начало';
+            li.style.backgroundColor = '#19c4d4';
+            li.style.color = 'black';
+            mainTag.parentElement.prepend(li);
+        }
+        document.getElementById('buttonTwo').onclick = function() {
+            const li = document.createElement('li');
+            li.classList.add('new');
+            li.innerHTML = 'Меня вставили перед оригиналом';
+            li.style.backgroundColor = 'forestgreen';
+            li.style.color = 'black';
+            mainTag.before(li);
+        }
+        document.getElementById('buttonThree').onclick = function() {
+            const li = document.createElement('li');
+            li.classList.add('new');
+            li.innerHTML = 'Меня вставили после оригинала';
+            li.style.backgroundColor = '#dc2525';
+            li.style.color = 'black';
+            mainTag.after(li);
+        }
+        document.getElementById('buttonFour').onclick = function() {
+            const li = document.createElement('li');
+            li.classList.add('new');
+            li.innerHTML = 'Меня вставили в самый конец';
+            li.style.backgroundColor = 'darkgrey';
+            li.style.color = 'black';
+            mainTag.parentElement.append(li);
+        }
+        document.getElementById('reset').onclick = function () {
+            let New = document.getElementsByClassName("new");
+            while ( New[0]) {
+                New[0].parentNode.removeChild(New[0]);
+            }
+        }
+    </script>
+</body>
+</html>

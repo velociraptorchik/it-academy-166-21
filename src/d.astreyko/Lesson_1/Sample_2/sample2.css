@@ -1,0 +1,98 @@
+html {
+    background: #b9a8a7;
+    margin: 0;
+}
+
+body {
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: black;
+    border-radius: 20px;
+    margin: auto;
+    width: 760px;
+    height: 474px;
+}
+
+.left {
+    display: block;
+}
+
+.right {
+    display: block;
+    margin: 38px;
+}
+
+.row {
+    display: flex;
+}
+
+.picter_left {
+    width: 380px;
+    height: 474px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.registr {
+    color: white;
+    font-weight: 100;
+}
+
+.border-bottom {
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    background-color: black;
+    color: white;
+    outline: none;
+    position: relative;
+    top: -4px;
+    font-size: 20px;
+    border: none;
+    width: 300px;
+    height: 30px;
+    border-bottom: 1px solid white;
+    margin-top: 20px;
+
+}
+
+.button {
+    border: none;
+    border-radius: 17px;
+    width: 100px;
+    height: 35px;
+    margin-top: 34px;
+    background-color: #3ba53b;
+    color: white;
+}
+
+.gender {
+    color: white;
+}
+
+option:not(:checked) {
+    color: white;
+}
+
+select:invalid {
+    color: grey;
+}
+
+input[type='date'] {
+    position: relative;
+    height: 32px;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+    width: 20px;
+    height: 20px;
+    background: url("date.svg");
+    background-repeat: no-repeat;
+}

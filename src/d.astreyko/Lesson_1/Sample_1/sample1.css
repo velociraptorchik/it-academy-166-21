@@ -1,0 +1,144 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+html {
+    background: linear-gradient(to bottom left, deepskyblue, purple);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    margin-top: 50px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 20px;
+    min-width: 900px;
+    margin: auto;
+    width: 900px;
+    height: 500px;
+}
+.left {
+    display: block;
+}
+
+.right {
+    display: block;
+    margin-right: 40px;
+}
+
+.row {
+    display: flex;
+}
+
+.pict{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 500px;
+}
+input[type="email"], input[type="password"] {
+    outline: none;
+    padding: 2px;
+    position: relative;
+    font-size: 20px;
+    border: none;
+    width: 300px;
+    height: 35px;
+}
+
+
+
+.border-bottom {
+    margin-top: 20px;
+    border-bottom: 4px solid purple;
+    border-image: linear-gradient(to bottom left, deepskyblue, purple);
+    border-image-slice: 1;
+}
+
+.continue{
+    letter-spacing: 3px;
+    color: white;
+    margin-top: 50px;
+    border: none;
+    width: 304px;
+    height: 50px;
+    background: linear-gradient(to left, deepskyblue, purple);
+}
+.material-icons1{
+    font-family: "Material Icons";
+    color: white;
+    font-size: 26px;
+}
+
+.arrow{
+    position: relative;
+    top: -40px;
+    left: 274px;
+}
+
+h1{
+    cursor: default;
+}
+
+.text{
+    cursor: default;
+    margin-top: -20px;
+    text-align: center;
+    color: #777777;
+    font-size: 15px;
+}
+.twitter{
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 15px;
+    color: white;
+    margin-top: 35px;
+    border: none;
+    width: 304px;
+    height: 50px;
+    background: linear-gradient(to left, #4ce5e0, deepskyblue);
+}
+.twitter_icon{
+    position: relative;
+    background-image: url(twitter.svg);
+    background-repeat: no-repeat;
+    height: 30px;
+    top: -20px;
+    left: 20px;
+}
+.facebook{
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 15px;
+    color: white;
+    margin-top: -4px;
+    border: none;
+    width: 304px;
+    height: 50px;
+    background: linear-gradient(to left, #4e78d0, #005eff);
+}
+.facebook_icon{
+    position: relative;
+    background-image: url(facebook.svg);
+    background-repeat: no-repeat;
+    height: 30px;
+    top: -20px;
+    left: 20px;
+}
+p{
+    position: relative;
+    top: 15px;
+    left: 60px;
+}
+
+.link{
+    display: block;
+    width: 304px;
+    height: 50px;
+    content: '';
+    position: relative;
+    top: -62px;
+}

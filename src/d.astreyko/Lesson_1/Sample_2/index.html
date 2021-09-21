@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 4</title>
+    <link rel="stylesheet" href="sample2.css">
+</head>
+<body>
+<div class="container row">
+    <div class="left">
+        <img src="pic_1.jpeg" class="picter_left">
+    </div>
+    <div class="right">
+        <h1 class="registr">Registration info</h1>
+        <form action="">
+            <input type="text" id="name" placeholder="Name">
+            <input placeholder="Birthday" type="text" onfocus="(this.type='date')"
+                   onblur="(this.type='text')" id="date"/>
+            <select required name="gender">
+                <option value="" style="display: none">Gender</option>
+                <option value="man">Man</option>
+                <option value="woman">Woman</option>
+            </select>
+            <input type="text" id="Email" placeholder="Email">
+            <input type="text" id="Phone" placeholder="Phone">
+            <input type="submit" value="Submit" class="button">
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
