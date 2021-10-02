@@ -1,0 +1,29 @@
+.border {
+  border: outset;
+  width: 20%;
+}
+.zag {
+  text-align: right;
+  position: relative;
+}
+.text {
+  text-align: right;
+  margin-left: 25px;
+}
+.imgq {
+  width: 150px;
+  margin-left: 230px;
+  float: right;
+}
+.imgw {
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: -15px;
+}
+.imge {
+  width: 150px;
+  float: left;
+}
